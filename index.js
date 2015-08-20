@@ -1,4 +1,4 @@
-exports = {
+module.exports = {
 
     loginToOffice365: function(username, password, siteUrl, loginMethod) {
 
