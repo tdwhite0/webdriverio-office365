@@ -32,11 +32,13 @@ Use "integrated" if you are logging in with Azure AD. "adfs" for ADFS login.
 	};
 
 	client = webdriverio.remote(options);
-
+	
+	// bind the custom command to webdriverio
 	client.addCommand('loginToOffice365', helper.loginToOffice365.bind(client));
 
 	client
 	    .init()
+	    // direct the browser to login to Office 365
 	    .loginToOffice365('someusername', 'sompassword', 'someurl')
 	    .getTitle().then(function(title) {
 	        console.log(title);
