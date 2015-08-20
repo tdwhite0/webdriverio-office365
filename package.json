@@ -1,0 +1,23 @@
+{
+    "name": "webdriverio-office365",
+    "version": "0.0.0",
+    "description": "Helper methods to simplify logging into Office 365 with webdriverio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tdwhite0/webdriverio-office365.git"
+    },
+    "keywords": [
+        "Office365",
+        "webdriverio"
+    ],
+    "author": "Thomas White <tdwhite0@gmail.com>",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/tdwhite0/webdriverio-office365/issues"
+    },
+    "homepage": "https://github.com/tdwhite0/webdriverio-office365"
+}
