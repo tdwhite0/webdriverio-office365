@@ -2,7 +2,24 @@
 
  A plugin for webdriverio - http://www.webdriver.io/
  
- Simplifies the process for automating Office365 login:
+ Simplifies the process for automating Office365 login.
+ 
+ Add the command to your webdriverio client using addCommand method.
+ 
+```
+client.addCommand('loginToOffice365', helper.loginToOffice365.bind(client));
+```
+
+Parameters:
+
+```
+.loginToOffice365(username, password, siteUrl, loginMethod)
+```
+
+loginMethod can be "integrated", "adfs", or undefined
+
+Use "integrated" if you are logging in with Azure AD. "adfs" for ADFS login.
+
  
 ```
 	var webdriverio = require('webdriverio');
@@ -14,9 +31,7 @@
 	    }
 	};
 
-
 	client = webdriverio.remote(options);
-
 
 	client.addCommand('loginToOffice365', helper.loginToOffice365.bind(client));
 
@@ -26,7 +41,7 @@
 	    .getTitle().then(function(title) {
 	        console.log(title);
 	    })
-		.end();
+	    .end();
 		
 ```
  
