@@ -6,7 +6,7 @@
  
 ```
 	var webdriverio = require('webdriverio');
-	var helper = require('./externalAddCommandHelper.js');
+	var helper = require('webdriverio-office365');
 
 	var options = {
 	    desiredCapabilities: {
