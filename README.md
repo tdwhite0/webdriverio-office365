@@ -1,3 +1,5 @@
+#webdriver-office365
+
  A plugin for webdriverio - http://www.webdriver.io/
  
  Simplifies the process for automating Office365 login:
