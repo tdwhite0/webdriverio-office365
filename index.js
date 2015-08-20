@@ -6,6 +6,7 @@ module.exports = {
 
         if (loginMethod === "integrated" || typeof(loginMethod) === "undefined") {
             return this.url(BASE_LOGIN_URL + siteUrl)
+                .pause(1000)
                 .waitForExist("#cred_sign_in_button")
                 .click('#cred_userid_inputtext')
                 .keys(username)
@@ -17,6 +18,7 @@ module.exports = {
         if (loginMethod === "adfs") {
 
             return this.url(BASE_LOGIN_URL + siteUrl)
+                .pause(1000)
                 .waitForExist("#submitButton")
                 .click('#userNameInput')
                 .keys(username)
