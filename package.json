@@ -1,6 +1,6 @@
 {
     "name": "webdriverio-office365",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Helper methods to simplify logging into Office 365 with webdriverio",
     "main": "index.js",
     "scripts": {
