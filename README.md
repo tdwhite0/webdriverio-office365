@@ -4,6 +4,10 @@
  
  Simplifies the process for automating Office365 login.
  
+ ```
+ npm install webdriverio-office365
+ ```
+ 
  Add the command to your webdriverio client using addCommand method.
  
 ```
